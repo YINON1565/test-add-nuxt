@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import oauth2callback from '../components/oauth2callback.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/oauth2callback',
+    name: 'oauth2callback',
+    component: oauth2callback
   },
   {
     path: '/about',
